@@ -1,7 +1,9 @@
 staticsite
 ==========
 
-This is a quickstart template for a static site. Clone and duplicate this to get started with your frontend code / other static site project.
+This is a quickstart template for a static site. You can use this to quickly prototype web applications, build static sites such as AAA-1 or emersonmedia.com, easily develop frontend code, or do all kinds of other things. It contains Emerson Media's standards and best practices and is designed to reduce spin up time for new projects.
+
+Clone and duplicate this repo to get started!
 
 _**Note:** This repo is very much a work in progress. It was first based on the fstrf.org, specrepos, and new emersonmedia.com projects in early 2015. If you learn anything or find things to make our lives easier for projects like this, please contribute them back here for next time._
 
