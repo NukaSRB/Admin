@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1100">
+
+    <!-- TODO: Populate meta tags programmatically -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+
+    <!-- TODO: Make sure favicons exist -->
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!-- Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/respond.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <!--[if lt IE 9]>
+    <div class="alert alert-info">
+        <strong>Heads up!</strong> You're using an older web browser, so some parts of this site may not work properly. You might want to try to <a href="http://whatbrowser.org/" class="alert-link">upgrade your browser</a>. You'll find that many websites work and look better, and you'll be safer online!
+    </div>
+    <![endif]-->
+
+    {{ content }}
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- TODO: If necessary, be sure to implement the Google Analytics tracking image using the information at http://moz.com/ugc/how-to-track-website-visitors-with-javascript-disabled -->
+    <noscript>
+      <img src="http://nojsstats.appspot.com/UA-xxxxxxxx-1/foo.com/page2?r=http://foo.com/page1&_t=timestamp" />
+    </noscript>
+  </body>
+</html>

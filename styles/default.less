@@ -1,0 +1,29 @@
+/**
+ * Default Application Styles
+ * --------------------------------------------------
+ */
+
+// Define include paths
+@vendor_path: "../node_modules";
+@framework_path: "./_framework";
+@module_path: "./_modules";
+
+// Import Twitter Bootstrap
+@import "@{framework_path}/_bootstrap.less";
+
+// Import Selectize (if needed)
+// @import "@{vendor_path}/selectize/dist/less/selectize.less";
+
+// Use Retina image mixins (if needed)
+// @import "@{vendor_path}/retina.js/src/retina.less";
+
+/**
+ * Custom Modules (Remember: Mobile First)
+ * --------------------------------------------------
+ */
+
+// TODO: Modularize all of your LESS in a smart, clean way, and list it here!
+
+@import "@{module_path}/_fonts.less";
+@import "@{module_path}/_home.less";
+@import "@{module_path}/_misc.less";

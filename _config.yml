@@ -1,0 +1,22 @@
+# _config.yml for staticsite
+
+## directory configuration
+source:         .
+destination:    ./public
+layouts:        ./layouts
+
+## excludes
+exclude:    ['.editorconfig','.gitignore','_config.yml','build.json','fonts/','Gulpfile.js','images/','layouts/','node_modules/','npm-debug.log','package.json','readme.md','scripts/','styles/',]
+
+## development server settings
+host:           127.0.0.1
+port:           4000
+
+## site specific
+
+title:          "staticsite"
+
+### use the 'links' array to set up commonly used links, such as:
+### `about: "/about.html"` here can be used as {{ site.links.about }} in Liquid
+links:
+    index:      "/home.html"
