@@ -6,7 +6,7 @@ destination:    ./public
 layouts:        ./layouts
 
 ## excludes
-exclude:    ['.editorconfig','.gitignore','_config.yml','build.json','fonts/','Gulpfile.js','images/','layouts/','node_modules/','npm-debug.log','package.json','readme.md','scripts/','styles/',]
+exclude:    ['.editorconfig','.gitignore','_config.yml','build.json','fonts/','Gulpfile.js','images/','layouts/','node_modules/','npm-debug.log','package.json','readme.md','README.md','todo.md','TODO.md','scripts/','styles/']
 
 ## development server settings
 host:           127.0.0.1
