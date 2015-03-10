@@ -2,6 +2,8 @@
   "name": "staticsite",
   "description": "The Node.js dependencies for staticsite",
   "private": true,
+  "engineStrict": false,
+  "engine-strict": false,
   "repository": {
     "type": "git",
     "url": "http://bitbucket.org/emersonmedia/staticsite"
