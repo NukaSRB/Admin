@@ -62,7 +62,7 @@ gulp.task('launch', function() {
 
 gulp.task('stage', ['deploy:stage']); // Alias
 gulp.task('deploy:stage', ['jekyll'], function(){
-    deploy('deploy:stage');
+    deploy('stage');
 });
 
 

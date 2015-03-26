@@ -27,7 +27,7 @@
         "source": ["./public"],
         "port": 2022,
         "connections": {
-            "stage": "username@stage:/home/username/path",
+            "stage": "staticsite.emersonmedia.com@stage01.emersonmedia.com:/home/staticsite.emersonmedia.com/repo",
             "production": "username@production:/home/username/path"
         }
     },
