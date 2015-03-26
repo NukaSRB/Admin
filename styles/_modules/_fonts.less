@@ -7,5 +7,11 @@
 // You could optimize this with a custom build of only the icons you use
 @import "../@{vendor_path}/font-awesome/less/font-awesome";
 
+// Fix for Font Awesome feedback icons in forms
+.form-control-feedback.fa {
+  line-height: 32px;
+  width: 32px;
+}
+
 // Include Open-Sans (optional)
 @import "../@{framework_path}/_open-sans";

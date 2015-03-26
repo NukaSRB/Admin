@@ -70,7 +70,7 @@ There are some page customization features built in to the Jekyll templates. Not
 - `category`: a key that references the unique category object as configured in `/data/categories.yml`. This is primarily used only by the blog posts to create a category badge over the featured image.
 - `body_class`: a list of CSS class names that will be added to the `body` element's `class` attribute.
 
-## Adding a New Blog Post
+### Adding a New Blog Post
 
 Jekyll has built in support for blogging. It is super easy to add a new blog post:
 
