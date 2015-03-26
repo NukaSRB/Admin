@@ -1,0 +1,37 @@
+---
+layout:         default
+title:          "Blog"
+permalink:      /blog/
+---
+
+<h1>{{ page.title }}</h1>
+
+{% for post in site.posts %}
+  {% assign author = site.data.authors[post.author] %}
+  <article class="blog-post">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p>
+      by {{ author.name }} on
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%a, %b %e, %Y" }}</time>
+    </p>
+    {{ post.excerpt }}
+    <p><a href="{{ post.url }}">Read more</a></p>
+  </article>
+{% endfor %}
+
+{% if paginator.posts %}
+  <nav>
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.prev_page_path }}" class="btn btn-default" title="Previous Page">
+        <i class="fa fa-angle-left"></i>
+        Previous Page
+      </a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="btn btn-default" title="Next Page">
+        <i class="fa fa-angle-right"></i>
+        Next Page
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}

@@ -8,7 +8,7 @@
   padding-bottom: 300px;
 
   main {
-    background: mix(@brand-danger, white, 20%);
+    background: mix(@brand-danger, white, 10%);
   }
 
   .error {
@@ -16,12 +16,16 @@
     padding-top: 100px;
     margin-top: -100px;
     position: relative;
-    top: 162px;
+    top: 152px;
+
+    &.error-404{
+      top: 130px;
+    }
 
     h1 {
       font-size: 150px;
       line-height: 150px;
-      color: mix(white, @brand-danger, 90%);
+      color: mix(white, @brand-danger, 80%);
       margin: 0;
       padding: 0;
       height: 100px;
@@ -35,10 +39,10 @@
 
     h2 {
       text-transform: uppercase;
-      color: @brand-primary;
+      color: black;
       height: 50px;
       position: relative;
-      top: 4px;
+      top: 8px;
       margin-bottom: @grid-gutter-width;
     }
 
@@ -72,15 +76,13 @@
  * --------------------------------------------------
  */
 
-@media (min-width: 420px) {
-  .error-page .error {
-    top: 140px;
-  }
-}
-
 @media @min-sm {
-  .error-page error {
-    top: 153px;
+  .error-page .error {
+    top: 173px;
+
+    &.error-404{
+      top: 144px;
+    }
 
     h1{
       font-size: 200px;
@@ -91,7 +93,7 @@
     h2{
       font-size: 48px;
       line-height: 48px;
-      top: -64px;
+      top: -63px;
       margin-bottom: 0;
       height: 30px;
     }
