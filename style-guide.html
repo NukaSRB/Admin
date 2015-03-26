@@ -1,0 +1,337 @@
+---
+layout:       default
+title:        "Style Guide"
+permalink:    /style-guide/
+---
+
+<article class="style-guide">
+  <h1>{{ site.title }} Style Guide</h1>
+  <hr>
+
+  <dl class="dl-horizontal">
+
+    <dt>
+      <h2>Introduction</h2>
+    </dt>
+    <dd>
+      <p>This is a style guide / reference page for developers; this won't actually go on {{ site.title }}'s website of course. Please follow the directions in this guide while building new pages for this site. This guide contains almost all of the elements in the rest of the site.</p>
+      <p>Unless otherwise noted, sections are identical between the two style guides.</p>
+    </dd>
+
+    <dt>
+      <h2>Color Swatches</h2>
+    </dt>
+    <dd>
+      <div class="swatches">
+        <div class="swatch swatch-1">
+          <div class="swatch-color">
+          </div>
+          <p>
+            <span class="swatch-name">Light Blue</span><br>
+            <span class="swatch-hex">#3D6DB4</span>
+          </p>
+        </div>
+        <div class="swatch swatch-2">
+          <div class="swatch-color">
+          </div>
+          <p>
+            <span class="swatch-name">Blue</span><br>
+            <span class="swatch-hex">#13386F</span>
+          </p>
+        </div>
+        <div class="swatch swatch-3">
+          <div class="swatch-color">
+          </div>
+          <p>
+            <span class="swatch-name">Dark Blue</span><br>
+            <span class="swatch-hex">#091C37</span>
+          </p>
+        </div>
+        <div class="swatch swatch-4">
+          <div class="swatch-color">
+          </div>
+          <p>
+            <span class="swatch-name">Light Gray</span><br>
+            <span class="swatch-hex">#F6F6F6</span>
+          </p>
+        </div>
+        <div class="swatch swatch-5">
+          <div class="swatch-color">
+          </div>
+          <p>
+            <span class="swatch-name">Dark Gray</span><br>
+            <span class="swatch-hex">#000000</span>
+          </p>
+        </div>
+      </div>
+    </dd>
+
+    <dt>
+      <h2>Typography</h2>
+    </dt>
+    <dd>
+      <dl class="dl-horizontal">
+        <dt>H1</dt>
+        <dd>
+          <h1>Lorem ipsum dolor sit amet</h1>
+        </dd>
+        <dt>H2</dt>
+        <dd>
+          <h2>Lorem ipsum dolor sit amet</h2>
+        </dd>
+        <dt>H3</dt>
+        <dd>
+          <h3>Lorem ipsum dolor sit amet</h3>
+        </dd>
+        <dt>H4</dt>
+        <dd>
+          <h4>Lorem ipsum dolor sit amet</h4>
+        </dd>
+        <dt>Lead Paragraph</dt>
+        <dd>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit arcu laoreet augue, sit amet fermentum quam ligula non est.</p>
+        </dd>
+        <dt>Regular Paragraph</dt>
+        <dd>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. Phasellus eget ligula ac dolor sagittis imperdiet eu id mi. Fusce ac dui a leo porttitor venenatis non at tortor.</p>
+        </dd>
+        <dt>Date</dt>
+        <dd>
+          <time datetime="2014-01-01 00:00">Jan. 1, 2014</time>
+        </dd>
+        <dt>Bold / Strong</dt>
+        <dd>
+          <strong>Strong text looks like this.</strong>
+        </dd>
+        <dt>Italics <code>em</code></dt>
+        <dd>
+          <em>Italic text looks like this.</em>
+        </dd>
+        <dt>Bold Italics <code>strong em</code></dt>
+        <dd>
+          <strong><em>Strong and italic text looks like this.</em></strong>
+        </dd>
+      </dl>
+    </dd>
+
+    <dt>
+      <h2>Buttons</h2>
+    </dt>
+    <dd>
+      <dl class="dl-horizontal">
+        <dt>
+          Button Styles<br>
+          <span class="text-muted">.btn-default</span>
+        </dt>
+        <dd>
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-default">Normal</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-default active">Hover</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-default active focus">Focus</button>
+            </div>
+          </div>
+        </dd>
+        <dt>Button Sizes</dt>
+        <dd>
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-default btn-sm">btn-sm</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-default btn-md">btn-md</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-default btn-lg">btn-lg</button>
+            </div>
+          </div>
+        </dd>
+        <dt>
+          Button w/ Icons<br>
+          <span class="text-muted">.btn-link</span>
+        </dt>
+        <dd>
+          <div class="row">
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-link"><span class="fa fa-fw fa-lock"></span> Login</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-link"><span class="fa fa-fw fa-plus-square"></span> Add</button>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-justified btn-link"><span class="fa fa-fw fa-minus-square"></span> Remove</button>
+            </div>
+          </div>
+        </dd>
+      </dl>
+    </dd>
+
+    <dt>
+      <h2>Forms</h2>
+      <p class="text-muted">Note: For <code>.has-success</code> and <code>.has-error</code>, see <a href="http://getbootstrap.com/css/#forms-control-validation" target="_blank">Bootstrap documentation <span class="fa fa-fw fa-external-link"></span></a> for proper icon markup, however use <code>FontAwesome</code> and not <code>Glyphicons</code>.</p>
+    </dt>
+    <dd>
+      <div class="row">
+        <fieldset class="col-sm-8">
+          <legend class="sr-only">Form Fields</legend>
+
+          <div class="form-group">
+            <input type="text" name="inputText" title="Input type=text" class="form-control" placeholder="Input type=text">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" name="inputTextDisabled" title="Input type=text (disabled)" id="inputDisabled" type="text" placeholder="Input type=text (disabled)" disabled>
+          </div>
+
+          <div class="form-group has-success has-feedback">
+            <input type="text" class="form-control" name="inputTextSuccess" title="Input type=text (.has-success)" id="inputSuccess" placeholder="Input type=text (.has-success)">
+            <span class="fa fa-fw fa-check-circle form-control-feedback"></span>
+          </div>
+
+          <div class="form-group has-error has-feedback">
+            <input type="text" class="form-control" name="inputTextError" title="Input type=text (.has-error)" id="inputError" placeholder="Input type=text (.has-error)">
+            <span class="fa fa-fw fa-times-circle form-control-feedback"></span>
+          </div>
+
+          <div class="form-group">
+            <select name="inputSelect" title="Select" class="form-control">
+              <option value="" selected>Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" name="inputTexarea" title="Textearea" rows="3" placeholder="Textarea"></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="checkbox">
+              <label for="inputCheckbox1">
+                <input type="checkbox" name="inputCheckbox" title="Default" id="inputCheckbox1" value="">
+                Default
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="inputCheckbox2">
+                <input type="checkbox" name="inputCheckbox" title="Checked" id="inputCheckbox2" value="" checked>
+                Checked
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="inputCheckbox3">
+                <input type="checkbox" name="inputCheckbox" title="Disabled" id="inputCheckbox3" value="" disabled>
+                Disabled
+              </label>
+            </div>
+            <div class="checkbox">
+              <label for="inputCheckbox4">
+                <input type="checkbox" name="inputCheckbox" title="Checked and Disabled" id="inputCheckbox4" value="" checked disabled>
+                Checked and Disabled
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="radio">
+              <label for="inputRadio1">
+                <input type="radio" name="inputRadio" title="Default" id="inputRadio1" value="">
+                Default
+              </label>
+            </div>
+            <div class="radio">
+              <label for="inputRadio2">
+                <input type="radio" name="inputRadio" title="Checked" id="inputRadio2" value="" checked>
+                Checked
+              </label>
+            </div>
+            <div class="radio">
+              <label for="inputRadio3">
+                <input type="radio" name="inputRadio" title="Disabled" id="inputRadio3" value="" disabled>
+                Disabled
+              </label>
+            </div>
+            <div class="radio">
+              <label for="inputRadio4">
+                <input type="radio" name="inputRadio2" title="Checked and Disabled" id="inputRadio4" value="" checked disabled>
+                Checked and Disabled
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </dd>
+
+    <dt>
+      <h2>Tables</h2>
+    </dt>
+    <dd>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+              <th scope="col">Column heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </dd>
+
+    <dt>
+      <h2>Alerts</h2>
+    </dt>
+    <dd>
+      <p><code>.alert-success</code></p>
+      <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+      <p><code>.alert-info</code></p>
+      <div class="alert alert-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+      <p><code>.alert-warning</code></p>
+      <div class="alert alert-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+      <p><code>.alert-danger</code></p>
+      <div class="alert alert-danger" style="margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+    </dd>
+
+  </dl>
+</article>

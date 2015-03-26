@@ -1,5 +1,9 @@
-node_modules
-assets
-npm-debug.log
 .DS_Store
-public
+.env
+npm-debug.log
+
+/assets
+/node_modules
+/public
+/public_html
+/vendor

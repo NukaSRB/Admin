@@ -10,15 +10,17 @@
   },
   "dependencies": {
     "gulp": "3.8.10",
+    "bootstrap": "3.3.2",
     "browserify-shim": "3.8.1",
     "esensi-build": "git+ssh://git@github.com:esensi/build",
-    "bootstrap": "3.3.2",
     "font-awesome": "git+https://github.com/FortAwesome/Font-Awesome.git#v4.3.0",
-    "open-sans-fontface": "git+https://github.com/FontFaceKit/open-sans.git#1.2.0",
     "jquery": "2.1.3",
-    "respond.js": "git+https://github.com/scottjehl/Respond.git#1.4.2",
-    "retina.js": "git+https://github.com/imulus/retinajs.git#1.3.0",
-    "selectize": "git+https://github.com/brianreavis/selectize.js#v0.11.2"
+    "open-sans-fontface": "git+https://github.com/FontFaceKit/open-sans.git#1.2.1"
+  },
+  "devDependencies": {
+    "rsyncwrapper": "~0.4.2",
+    "gulp-util": "~3.0.4",
+    "run-sequence": "~0.3.2"
   },
   "browser": {
     "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js",
@@ -34,10 +36,16 @@
     "bootstrap-tab": "./node_modules/bootstrap/js/tab.js",
     "bootstrap-tooltip": "./node_modules/bootstrap/js/tooltip.js",
     "bootstrap-transition": "./node_modules/bootstrap/js/transition.js",
-    "datatables": "./node_modules/DataTables/media/js/jquery.dataTables.min.js",
-    "respond": "./node_modules/Respond.js/dest/respond.min.js",
-    "retina": "./node_modules/retina.js/dist/retina.min.js",
-    "selectize": "./node_modules/selectize/dist/js/standalone/selectize.min.js"
+    "jcf": "./node_modules/jcf/js/jcf.js",
+    "jcf-button": "./node_modules/jcf/js/jcf.button.js",
+    "jcf-checkbox": "./node_modules/jcf/js/jcf.checkbox.js",
+    "jcf-file": "./node_modules/jcf/js/jcf.file.js",
+    "jcf-number": "./node_modules/jcf/js/jcf.number.js",
+    "jcf-radio": "./node_modules/jcf/js/jcf.radio.js",
+    "jcf-range": "./node_modules/jcf/js/jcf.range.js",
+    "jcf-scrollable": "./node_modules/jcf/js/jcf.scrollable.js",
+    "jcf-select": "./node_modules/jcf/js/jcf.select.js",
+    "jcf-textarea": "./node_modules/jcf/js/jcf.textarea.js"
   },
   "browserify": {
     "transform": [
@@ -118,11 +126,56 @@
     "jquery": {
         "exports": "$"
     },
-    "selectize": {
-        "exports": "selectize",
-        "depends": [
-            "jquery"
-        ]
+    "jcf": {
+      "exports": "jcf",
+      "depends": [
+        "jquery"
+      ]
+    },
+    "jcf-button": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-checkbox": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-file": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-number": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-radio": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-range": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-scrollable": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-select": {
+      "depends": [
+        "jcf"
+      ]
+    },
+    "jcf-textarea": {
+      "depends": [
+        "jcf"
+      ]
     }
   }
 }

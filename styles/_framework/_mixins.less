@@ -1,16 +1,106 @@
 /**
- * Custom Mixin Styles (Sample Only!)
+ * Custom Mixin Styles
  * --------------------------------------------------
  */
 
-// inline block reset
-.inline-block(@align:top) {
-  display:inline-block;
-  vertical-align:@align;
+// clearfix
+.clearfix {
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+// reset for list
+.listreset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 // hide text
 .hide-text {
-	overflow: hidden;
-	text-indent: -9999px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+// placeholder
+.placeholder(@color) {
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+  &:-moz-placeholder {
+    color: @color;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    color: @color;
+  }
+  &:-ms-input-placeholder {
+    color: @color;
+  }
+}
+
+// sprite images
+.sprite(@width, @height, @x, @y) {
+  background: url('../img/sprite.png') no-repeat @x @y;
+  width: @width;
+  height: @height;
+}
+
+// retina images
+.img-retina(@image, @extension, @width, @height) {
+  background: url('../img/@{image}.@{extension}') no-repeat;
+  width: @width;
+  height: @height;
+
+  @media (min--moz-device-pixel-ratio: 1.3),
+  (-o-min-device-pixel-ratio: 1.3),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
+    background-image: url('../img/@{image}@2x.@{extension}');
+    background-size: @width @height;
+  }
+}
+
+// icon font
+.ico-font {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-language-override: normal;
+  font-size: inherit;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-synthesis: weight style;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: auto;
+  transform: translate(0, 0);
+}
+
+// background hover effect
+.bg-hover(@color) {
+  background: @color;
+  transition: background 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    background: darken(@color, 10%);
+  }
+}
+
+// text hover effect
+.txt-hover(@color: #5D5666) {
+  color: @color;
+
+  &:hover,
+  &:focus {
+    color: lighten(@color, 15%);
+  }
 }

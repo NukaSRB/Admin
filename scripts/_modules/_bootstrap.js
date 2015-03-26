@@ -15,7 +15,7 @@ window.$ = window.jQuery = require('jquery');
 // require('bootstrap-button');
 // require('bootstrap-carousel');
 // require('bootstrap-collapse');
-// require('bootstrap-dropdown');
+require('bootstrap-dropdown');
 // require('bootstrap-modal');
 // require('bootstrap-tooltip');
 // require('bootstrap-popover');

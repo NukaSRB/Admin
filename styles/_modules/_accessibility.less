@@ -1,0 +1,65 @@
+/**
+ * Accessibility Styles
+ * --------------------------------------------------
+ */
+
+.accessibility {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 0;
+  overflow: hidden;
+}
+
+.accessibility:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+#main:focus{
+  outline: none;
+}
+
+body {
+
+  // Hide elements when JS is enabled
+  &.js .hidden-js {
+    display: none !important;
+  }
+
+  // Show elements when JS is enabled
+  &.js .visible-js {
+    display: block !important;
+  }
+
+  &.js li.visible-js {
+    display: inline-block !important;
+  }
+
+  &.js span.visible-js{
+    display: inline !important;
+  }
+
+  &.js .form-inline .form-group.visible-js{
+    display: inline-block !important;
+  }
+
+  .hidden-js {
+    display: inline-block !important;
+  }
+
+  .hidden-js.list-more{
+    display: block !important;
+  }
+
+   &.js .list-more.hidden-js{
+    display: none !important;
+   }
+
+  .visible-js {
+    display: none !important;
+  }
+
+}

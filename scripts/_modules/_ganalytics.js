@@ -11,7 +11,6 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-// TODO: Add your Analytics ID here!
-ga('create', 'UA-xxxxxxx-1', 'auto');
+ga('create', 'UA-xxxxxxx-1', 'auto'); // TODO: Add your Analytics ID here!
 ga('require', 'linkid', 'linkid.js');
 ga('send', 'pageview');

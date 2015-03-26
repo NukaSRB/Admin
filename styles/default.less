@@ -4,26 +4,26 @@
  */
 
 // Define include paths
-@vendor_path: "../node_modules";
-@framework_path: "./_framework";
-@module_path: "./_modules";
+@vendor_path: '../node_modules';
+@framework_path: './_framework';
+@module_path: './_modules';
+@object_path: './_objects';
 
 // Import Twitter Bootstrap
-@import "@{framework_path}/_bootstrap.less";
-
-// Import Selectize (if needed)
-// @import "@{vendor_path}/selectize/dist/less/selectize.less";
-
-// Use Retina image mixins (if needed)
-// @import "@{vendor_path}/retina.js/src/retina.less";
+@import '@{framework_path}/_bootstrap';
 
 /**
  * Custom Modules (Remember: Mobile First)
  * --------------------------------------------------
  */
 
-// TODO: Modularize all of your LESS in a smart, clean way, and list it here!
+@import '@{module_path}/_accessibility';
+@import '@{module_path}/_errors';
+@import '@{module_path}/_fonts';
+@import '@{module_path}/_jcf';
 
-@import "@{module_path}/_fonts.less";
-@import "@{module_path}/_home.less";
-@import "@{module_path}/_misc.less";
+/**
+ * Custom Objects (Remember: Mobile First)
+ * --------------------------------------------------
+ */
+@import '@{object_path}/_example';

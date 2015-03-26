@@ -23,6 +23,14 @@
         "watch": "./images/**/*",
         "dest": "./assets/img/"
     },
+    "deployment": {
+        "source": ["./public"],
+        "port": 2022,
+        "connections": {
+            "stage": "username@stage:/home/username/path",
+            "production": "username@production:/home/username/path"
+        }
+    },
     "vendor": "./node_modules/",
     "revisions": false
 }

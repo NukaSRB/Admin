@@ -4,19 +4,44 @@
 source:         .
 destination:    ./public
 layouts:        ./layouts
+data_source:    ./data
+
+# blog settings
+timezone:       America/New_York
+highlighter:    pygments
+permalink:      pretty
+paginate:       10
+paginate_path:  '/blog/:num'
+markdown:       redcarpet
+safe:           true
 
 ## excludes
-exclude:    ['.editorconfig','.gitignore','_config.yml','build.json','fonts/','Gulpfile.js','images/','layouts/','node_modules/','npm-debug.log','package.json','readme.md','README.md','todo.md','TODO.md','scripts/','styles/']
+exclude:        ['.csscomb.json', '.editorconfig','.gitignore','.gitkeep', '_config.yml','build.json','fonts/','Gulpfile.js','images/','layouts/','node_modules/','npm-debug.log','package.json','readme.md','README.md','todo.md','TODO.md','scripts/','styles/','source/','composer.json','vendor/','.env','.env.sample','partials/','blog/partials','blog/_posts/partials','data/','composer.lock']
 
 ## development server settings
 host:           127.0.0.1
 port:           4000
+url:            http://127.0.0.1 # change to production domain
+baseurl:        /
 
-## site specific
+## extension settings
+redcarpet:
+  extensions: ['smart']
 
-title:          "staticsite"
+## meta data
+author:         "Emerson Media"
+title:          "Static Site"
+description:    "TODO:"
+keywords:       "TODO:"
 
-### use the 'links' array to set up commonly used links, such as:
-### `about: "/about.html"` here can be used as {{ site.links.about }} in Liquid
+## use the 'links' array to set up commonly used links, such as:
+## `example: "/example/"` here can be used as {{ site.links.example }} in Liquid
 links:
-    index:      "/home.html"
+    index:          "/"
+    blog:           "/blog/"
+    feed:           "/rss.xml"
+    sitemap:        "/sitemap.xml"
+    style-guide:    "/style-guide/"
+
+    # add site specific links below:
+    example:        "/example/"

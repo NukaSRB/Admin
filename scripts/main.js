@@ -13,28 +13,23 @@ document.body.className += ' js';
 // You must use this syntax to prevent issues, especially w/ Bootstrap.
 window.$ = window.jQuery = require('jquery');
 
+// Google Webfont Loader (optional)
+// require('./_modules/_webfont');
+
 // Twitter Bootstrap Optimized Build
 require('./_modules/_bootstrap');
 
 // IE/Mobile Platform Detection
 require('./_modules/_ie10');
-require('./_modules/_mobile');
+// require('./_modules/_mobile'); // (optional)
 
-// Google Webfont Loader
-// Optional.
-//require('./_modules/_webfont');
+// Load Javascript Custom Forms (optional)
+// Please don't use this module...
+// require('./_modules/_jcf');
 
-// Retina Image Loader
-require('retina');
-
-// Load individual modules here (page specific JS)
-require('./_modules/_yourmodule');
+// Load Your Custom Modules
+require('./_modules/_example');
 
 // Load Google Analytics
 // You might want to move this higher for more priority
 require('./_modules/_ganalytics');
-
-$(function()
-{
-    // Custom JS here.
-});
