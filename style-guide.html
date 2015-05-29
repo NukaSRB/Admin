@@ -8,20 +8,20 @@ permalink:    /style-guide/
   <h1>{{ site.title }} Style Guide</h1>
   <hr>
 
-  <dl class="dl-horizontal">
-
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Introduction</h2>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <p>This is a style guide / reference page for developers; this won't actually go on {{ site.title }}'s website of course. Please follow the directions in this guide while building new pages for this site. This guide contains almost all of the elements in the rest of the site.</p>
-      <p>Unless otherwise noted, sections are identical between the two style guides.</p>
-    </dd>
+    </div>
+  </div>
 
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Color Swatches</h2>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <div class="swatches">
         <div class="swatch swatch-1">
           <div class="swatch-color">
@@ -55,29 +55,15 @@ permalink:    /style-guide/
             <span class="swatch-hex"></span>
           </p>
         </div>
-        <div class="swatch swatch-5">
-          <div class="swatch-color">
-          </div>
-          <p>
-            <span class="swatch-name">Swatch 5</span><br>
-            <span class="swatch-hex"></span>
-          </p>
-        </div>
-        <div class="swatch swatch-6">
-          <div class="swatch-color">
-          </div>
-          <p>
-            <span class="swatch-name">Swatch 6</span><br>
-            <span class="swatch-hex"></span>
-          </p>
-        </div>
       </div>
-    </dd>
+    </div>
+  </div>
 
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Typography</h2>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <dl class="dl-horizontal">
         <dt>H1</dt>
         <dd>
@@ -120,12 +106,14 @@ permalink:    /style-guide/
           <strong><em>Strong and italic text looks like this.</em></strong>
         </dd>
       </dl>
-    </dd>
+    </div>
+  </div>
 
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Buttons</h2>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <dl class="dl-horizontal">
         <dt>
           Button Styles<br>
@@ -168,21 +156,23 @@ permalink:    /style-guide/
               <button class="btn btn-justified btn-link"><span class="fa fa-fw fa-lock"></span> Login</button>
             </div>
             <div class="col-sm-4">
-              <button class="btn btn-justified btn-link"><span class="fa fa-fw fa-plus-square"></span> Add</button>
+              <button class="btn btn-justified btn-link active"><span class="fa fa-fw fa-plus-square"></span> Add</button>
             </div>
             <div class="col-sm-4">
-              <button class="btn btn-justified btn-link"><span class="fa fa-fw fa-minus-square"></span> Remove</button>
+              <button class="btn btn-justified btn-link btn-lg active"><span class="fa fa-fw fa-minus-square"></span> Remove</button>
             </div>
           </div>
         </dd>
       </dl>
-    </dd>
+    </div>
+  </div>
 
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Forms</h2>
       <p class="help-block">Note: For <code>.has-success</code> and <code>.has-error</code>, see <a href="http://getbootstrap.com/css/#forms-control-validation" target="_blank">Bootstrap documentation <span class="fa fa-fw fa-external-link"></span></a> for proper icon markup, however use <code>FontAwesome</code> and not <code>Glyphicons</code>.</p>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <div class="row">
         <fieldset class="col-sm-8">
           <legend class="sr-only">Form Fields</legend>
@@ -206,14 +196,16 @@ permalink:    /style-guide/
           </div>
 
           <div class="form-group">
-            <select name="inputSelect" title="Select" class="form-control">
-              <option value="" selected>Select</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
+            <div class="select-wrapper">
+              <select name="inputSelect" title="Select" class="form-control">
+                <option value="" selected>Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
@@ -275,20 +267,19 @@ permalink:    /style-guide/
           </div>
         </fieldset>
       </div>
-    </dd>
+    </div>
+  </div>
 
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Tables</h2>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <div class="table-responsive">
         <table class="table">
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
-              <th scope="col">Column heading</th>
               <th scope="col">Column heading</th>
               <th scope="col">Column heading</th>
               <th scope="col">Column heading</th>
@@ -300,15 +291,9 @@ permalink:    /style-guide/
               <td>Column content</td>
               <td>Column content</td>
               <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
               <td>Column content</td>
               <td>Column content</td>
               <td>Column content</td>
@@ -318,28 +303,27 @@ permalink:    /style-guide/
               <td>Column content</td>
               <td>Column content</td>
               <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
             </tr>
           </tbody>
         </table>
       </div>
-    </dd>
+    </div>
+  </div>
 
-    <dt>
+  <div class="row">
+    <div class="col-md-3 style-guide-heading">
       <h2>Alerts</h2>
-    </dt>
-    <dd>
+    </div>
+    <div class="col-md-9 style-guide-content">
       <p><code>.alert-success</code></p>
-      <div class="alert alert-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+      <div class="alert alert-success with-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
       <p><code>.alert-info</code></p>
-      <div class="alert alert-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+      <div class="alert alert-info with-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
       <p><code>.alert-warning</code></p>
-      <div class="alert alert-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+      <div class="alert alert-warning with-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
       <p><code>.alert-danger</code></p>
-      <div class="alert alert-danger" style="margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
-    </dd>
+      <div class="alert alert-danger with-icon" style="margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, tellus quis malesuada sollicitudin, elit arcu laoreet augue, sit amet fermentum quam ligula non est. </div>
+    </div>
+  </div>
 
-  </dl>
 </article>

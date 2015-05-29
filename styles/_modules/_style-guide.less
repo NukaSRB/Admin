@@ -10,7 +10,7 @@
 
     .swatch {
       .make-xs-column(6);
-      .make-sm-column(4);
+      .make-sm-column(3);
 
       .swatch-color {
         height: 100px;
@@ -98,62 +98,68 @@
     }
   }
 
-  dl {
-    .make-row();
-    margin-bottom: 0;
+  .text-muted {
+    font-weight: normal;
+  }
+
+  .help-block {
+    white-space: normal;
+    .small;
+  }
+
+  code {
+    white-space: nowrap;
+  }
+
+  .style-guide-heading {
+    padding-bottom: @grid-gutter-width;
+    color: @swatch-1;
+
+    h2 {
+      margin-top: 0;
+      color: @swatch-1;
+    }
+
+    .help-block {
+      font-weight: bold;
+    }
+  }
+
+  .style-guide-content {
+    padding-bottom: @grid-gutter-width;
+
+    dl {
+      .make-row();
+      margin-bottom: 0;
+    }
 
     dt {
       .make-sm-column(4);
       .make-lg-column(3);
       clear: left;
       text-align: left;
-      padding-bottom: @grid-gutter-width;
-      color: @swatch-1;
-
-      h2 {
-        margin-top: 0;
-        color: @swatch-1;
-      }
-
-      .text-muted {
-        font-weight: normal;
-      }
-    }
-
-    > dt > .help-block {
-      white-space: normal;
-      .small;
-
-      code {
-        white-space: nowrap;
-      }
     }
 
     dd {
       .make-sm-column(8);
       .make-lg-column(9);
       margin-left: 0;
-      padding-bottom: @grid-gutter-width;
+    }
 
-      dl {
-        margin-bottom: 0;
-      }
+    dt,
+    dd {
+      padding-bottom: @grid-gutter-width /2;
+      color: @text-color;
 
-      dt,
-      dd {
-        padding-bottom: @grid-gutter-width /2;
-        color: @text-color;
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-          margin: 0;
-          padding: 0;
-        }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+        padding: 0;
       }
     }
   }
