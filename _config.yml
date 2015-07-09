@@ -16,7 +16,7 @@ markdown:       redcarpet
 safe:           true
 
 ## excludes
-exclude:        ['.csscomb.json', '.editorconfig','.gitignore','.gitkeep', '_config.yml','build.json','fonts/','Gulpfile.js','images/','layouts/','node_modules/','npm-debug.log','package.json','readme.md','README.md','todo.md','TODO.md','scripts/','styles/','source/','composer.json','vendor/','.env','.env.sample','partials/','blog/partials','blog/_posts/partials','data/','composer.lock']
+exclude:        ['.csscomb.json', '.editorconfig', '.env', '.env.sample', '.gitignore', '.gitkeep', '_config.yml', 'aws-credentials.json', 'blog/_posts/partials', 'blog/partials', 'build.json', 'composer.json', 'composer.lock', 'data/', 'fonts/', 'Gulpfile.js', 'images/', 'layouts/', 'node_modules/', 'npm-debug.log', 'package.json', 'partials/', 'readme.md', 'README.md', 'scripts/', 'source/', 'styles/', 'todo.md', 'TODO.md', 'vendor/']
 
 ## development server settings
 host:           127.0.0.1
