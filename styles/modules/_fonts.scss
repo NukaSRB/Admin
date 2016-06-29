@@ -5,13 +5,10 @@
 
 // Include Font Awesome font styles (if required)
 // You could optimize this with a custom build of only the icons you use
-@import "../@{vendor_path}/font-awesome/less/font-awesome";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 
 // Fix for Font Awesome feedback icons in forms
 .form-control-feedback.fa {
   line-height: 32px;
   width: 32px;
 }
-
-// Include Open-Sans (optional)
-@import "../@{framework_path}/_open-sans";

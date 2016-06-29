@@ -1,35 +1,57 @@
 {
     "scripts": {
         "source": "./scripts/*.js",
-        "watch" : "./scripts/**/*.js",
-        "dest"  : "./assets/js/"
+        "watch": "./scripts/**/*.js",
+        "dest": "assets/js/",
+        "lint": [
+            "./gulpfile.js",
+            "./.jshintrc",
+            "./composer.json",
+            "./package.json",
+            "./scripts/**/*.js",
+            "!./scripts/common/_ga.js"
+        ]
     },
     "styles": {
-        "source": "./styles/*.less",
-        "watch" : "./styles/**/*.less",
-        "dest": "./assets/css/"
+        "source": "./styles/*.scss",
+        "watch": "./styles/**/*.scss",
+        "dest": "assets/css/",
+        "compiler": "sass"
     },
     "fonts": {
         "source": [
             "./fonts/**/*",
             "./node_modules/font-awesome/fonts/**/*",
-            "./node_modules/open-sans-fontface/fonts/**/*"
+            "./node_modules/bootstrap/dist/fonts/**/*",
+            "./node_modules/open-sans/fonts/**/*"
         ],
         "watch": "./fonts/**/*",
-        "dest": "./assets/fonts/"
+        "dest": "assets/fonts/"
     },
     "images": {
         "source": "./images/**/*",
         "watch": "./images/**/*",
-        "dest": "./assets/img/"
+        "dest": "assets/img/"
     },
     "deployment": {
-        "source": ["./public"],
-        "port": 2022,
+        "source": ["./*"],
         "connections": {
-            "stage": "staticsite.emersonmedia.com@stage01.emersonmedia.com:/home/staticsite.emersonmedia.com/repo",
-            "production": "username@production:/home/username/path"
+            "s3-example": {
+                "type": "s3",
+                "bucket": "XXXXXXXX",
+                "region": "us-standard"
+            },
+            "rsync-example": {
+                "type":     "rsync",
+                "username": "username",
+                "hostname": "example.com",
+                "dest": "/home/username/public"
+            }
         }
+    },
+    "workbench": {
+        "watch": ["assets/**/*"],
+        "init": ["watch"]
     },
     "autoprefixerOpts": {
         "browsers": [
