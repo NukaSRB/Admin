@@ -4,11 +4,11 @@
  */
 
 .error-page {
-  background: @swatch-1;
+  background: $swatch-1;
   padding-bottom: 300px;
 
   main {
-    background: mix(@swatch-1, white, 10%);
+    background: mix($swatch-1, white, 10%);
   }
 
   .error {
@@ -25,7 +25,7 @@
     h1 {
       font-size: 150px;
       line-height: 150px;
-      color: mix(white, @swatch-1, 80%);
+      color: mix(white, $swatch-1, 80%);
       margin: 0;
       padding: 0;
       height: 100px;
@@ -43,17 +43,17 @@
       height: 50px;
       position: relative;
       top: 8px;
-      margin-bottom: @grid-gutter-width;
+      margin-bottom: $grid-gutter-width;
     }
 
     p {
-      padding-left: @grid-gutter-width;
-      padding-right: @grid-gutter-width;
+      padding-left: $grid-gutter-width;
+      padding-right: $grid-gutter-width;
       color: white;
     }
 
     ul.nav-pills {
-      margin-top: @grid-gutter-width;
+      margin-top: $grid-gutter-width;
 
       li {
         float: none;
@@ -62,8 +62,8 @@
         margin-right: 5px;
 
         a {
-          .btn;
-          .btn-default;
+          // @extend .btn;
+          // @extend .btn-default;
         }
       }
     }
@@ -76,7 +76,7 @@
  * --------------------------------------------------
  */
 
-@media @min-sm {
+@include media-breakpoint-up(sm) {
   .error-page .error {
     top: 173px;
 

@@ -4,11 +4,8 @@
  */
 
 // Require dependencies
-@vendor_path: '../node_modules';
-@framework_path: './_framework';
-@bootstrap_path: '@{vendor_path}/bootstrap/less';
-@import '@{bootstrap_path}/variables';
-@import '@{framework_path}/_variables';
+@import '../node_modules/bootstrap/scss/variables';
+@import './framework/variables';
 
 
 /**
