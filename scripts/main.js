@@ -14,7 +14,7 @@ document.body.className += ' js';
 window.$ = window.jQuery = require('jquery');
 
 // Google Webfont Loader (optional)
-// require('./_modules/_webfont');
+require('./_modules/_webfont');
 
 // Twitter Bootstrap Optimized Build
 require('./_modules/_bootstrap');

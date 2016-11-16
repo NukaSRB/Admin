@@ -74,5 +74,6 @@
         ]
     },
     "vendor": "./node_modules/",
+    "sourcemaps": true,
     "revisions": false
 }

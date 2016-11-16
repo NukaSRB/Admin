@@ -1,0 +1,25 @@
+.sidebar-compact {
+	.sidebar {
+		width: 52px;
+
+		.brand {
+			display: none;
+		}
+
+		.nav-link {
+			padding-left: $grid-gutter-width / 2;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		.nav-link-icon {
+			position: static;
+		}
+
+		.nav-link-text {
+			display: none;
+		}
+	}
+}

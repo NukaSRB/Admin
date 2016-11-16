@@ -1,0 +1,12 @@
+.dashboard-icon:before {
+	@include icon-font($fa-var-tachometer);
+}
+.users-icon:before {
+	@include icon-font($fa-var-users);
+}
+.pages-icon:before {
+	@include icon-font($fa-var-file-text);
+}
+.activities-icon:before {
+	@include icon-font($fa-var-tasks);
+}

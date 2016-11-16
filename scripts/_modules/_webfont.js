@@ -9,7 +9,7 @@
 window.WebFontConfig = {
     google: {
         families: [
-            'Open+Sans:400,700,700italic',
+            'Lato:300,400,700',
         ]
     }
 };

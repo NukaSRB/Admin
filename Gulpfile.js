@@ -20,4 +20,7 @@ global.buildOptions = require('./build.json');
 // global.awsCredentials = require('./aws-credentials.json');
 
 // Require esensi-build tasks: and for testing purposes fallback to index
-try{ require('esensi-build'); } catch(e) { require('./index'); }
+try { require('esensi-build'); } catch(e) { 
+	console.log('aca')
+	require('./index');
+}

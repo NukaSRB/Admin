@@ -37,8 +37,8 @@ keywords:       "TODO:"
 ## use the 'links' array to set up commonly used links, such as:
 ## `example: "/example/"` here can be used as {{ site.links.example }} in Liquid
 links:
-    home:           "/home/"
-    blog:           "/blog/"
+    dashboard:           "/dashboard/"
+    users:           "/users/"
     feed:           "/rss.xml"
     sitemap:        "/sitemap.xml"
     style-guide:    "/style-guide/"

@@ -4,7 +4,8 @@
  */
 
 // typography
-$font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Lato", Helvetica, Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
 
 // colors
 $swatch-1: $brand-primary;
@@ -13,3 +14,19 @@ $swatch-3: $brand-info;
 $swatch-4: $brand-warning;
 $swatch-5: $brand-danger;
 $swatch-6: $gray-light;
+
+$sidebar-bg: #323543;
+$sidebar-link-border: darken($sidebar-bg, 4%);
+$main-content-bg: #f1f1f1;
+
+// alerts
+$alert-border-width: 0;
+$alert-border-radius: 0;
+$alert-danger-bg: #e05c5c;
+$alert-danger-text: #fff;
+
+// boxes
+$box-bg: #fff;
+$box-border-color: #d2d2d2;
+$box-shadow-color: rgba(0,0,0,.1);
+$box-shadow: 0 0 5px $box-shadow-color;

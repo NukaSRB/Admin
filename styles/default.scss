@@ -4,8 +4,10 @@
  */
 
 // Import Twitter Bootstrap
-@import './framework/bootstrap';
+@import '../node_modules/bootstrap/scss/variables';
 @import './framework/variables';
+@import './framework/bootstrap';
+@import './framework/fontawesome';
 @import './framework/mixins';
 
 /**
@@ -20,7 +22,9 @@
  * Components (Remember: Mobile First)
  * --------------------------------------------------
  */
-@import './components/example';
+@import './components/box';
+@import './components/brand';
+@import './components/icons';
 
 
 /**
@@ -30,7 +34,20 @@
 
 @import './modules/accessibility';
 @import './modules/errors';
+@import './modules/data-table';
 @import './modules/fonts';
+@import './modules/header';
+@import './modules/footer';
+@import './modules/sidebar';
+@import './modules/sidebar-compact';
+@import './modules/top-alerts';
+
+/**
+ * Layout (Remember: Mobile First)
+ * --------------------------------------------------
+ */
+
+@import './layout/interface';
 
 
 /**

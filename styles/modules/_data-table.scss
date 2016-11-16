@@ -1,0 +1,187 @@
+$card-profile-padding-left: 52px;
+
+.data-table {
+
+	@include media-breakpoint-only(sm) {
+		padding-left: $grid-gutter-width / 2;
+		padding-right: $grid-gutter-width / 2;
+	}
+	@include media-breakpoint-up(md) {
+		display: table;
+		width: 100%;
+	}
+}
+
+.data-table-row {
+	@include media-breakpoint-down(sm) {
+		border: solid $box-border-color;
+		border-width: 1px 0;
+		padding: $grid-gutter-width $grid-gutter-width * 0.65 $grid-gutter-width * 1.15;
+		position: relative;
+		& + & {
+			margin-top: $grid-gutter-width / 2;
+		}
+	}
+	@include media-breakpoint-only(sm) {
+		border-width: 1px;
+	}
+	@include media-breakpoint-up(md) {
+		display: table-row;
+	}
+}
+
+.data-table-cell {
+	@include media-breakpoint-up(xs) {
+		max-width: 400px;
+	}
+	@include media-breakpoint-up(md) {
+		border-top: 1px solid $box-border-color;
+		display: table-cell;
+		padding: $table-cell-padding / 2 $table-cell-padding;
+		vertical-align: middle;
+
+		&:first-child {
+			padding-left: $grid-gutter-width / 2;
+		}
+		&:last-child {
+			padding-right: $grid-gutter-width / 2;
+		}
+	}
+	@include media-breakpoint-only(lg) {
+		&:first-child {
+			padding-left: $grid-gutter-width / 2;
+		}
+		&:last-child {
+			padding-right: $grid-gutter-width / 2;
+		}
+	}
+
+	.not-confirmed & {
+		color: $text-muted;
+	}
+	.data-table-row:first-child & {
+		border-top: 0;
+	}
+}
+
+.data-title-cell {
+	@include media-breakpoint-down(sm) {
+		font-size: 22px;
+		font-weight: bold;
+	}
+}
+
+.data-table-head {
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
+	.data-table-cell {
+		font-weight: bold;
+		padding-bottom: $table-cell-padding;
+		padding-top: $table-cell-padding;
+	}
+}
+
+.data-table-actions {
+	@include list-unstyled;
+	min-width: 70px;
+	text-align: right;
+
+	@include media-breakpoint-down(sm) {
+		position: absolute;
+		right: $grid-gutter-width / 2;
+		top: $grid-gutter-width / 3;
+	}
+	@include media-breakpoint-up(md) {
+	    position: relative;
+	    top: 8px;
+	}
+
+	li {
+	    display: inline-block;
+	    font-size: 20px;
+	    margin-left: 14px;
+	}
+	a {
+		color: lighten($gray-dark, 15%);
+
+		&:hover {
+			color: $gray-dark;
+		}
+	}
+	.icon-edit {
+	    position: relative;
+		top: 1px;
+	}
+}
+
+.data-edit-text {
+	color: $text-muted;
+	font-size: 80%;
+	margin-bottom: 0;
+
+	&.data-table-cell {
+		@include media-breakpoint-up(sm) {
+			display: none;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.data-table-cell > & {
+			display: none;
+		}
+	}
+}
+
+.data-table.is-scrollable {
+	border: 1px solid $box-border-color;
+
+	@include media-breakpoint-down(sm) {
+		border-bottom: none;
+	}
+
+	@include media-breakpoint-up(sm) {
+		.data-table-cell {
+			width: 20%;
+
+			&:first-child {
+				padding-left: $table-cell-padding * 1.5;
+				width: 40%;
+			}
+			&:last-child {
+				padding-right: $table-cell-padding * 1.5;
+			}
+		}
+
+		.data-table-head {
+			display: table-header-group;
+			overflow: hidden;
+
+			.data-table-cell {
+				border-bottom: 1px solid $box-border-color;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		.data-table-body {
+			display: table-row-group;
+			overflow-y: auto;
+			max-height: 400px;
+		}
+	}
+
+	.data-table-card {
+		@include media-breakpoint-down(sm) {
+			border-top: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+// to simulate a tbody
+@include media-breakpoint-up(sm) {
+	.data-table-body {
+		display: table-row-group;
+	}
+}
