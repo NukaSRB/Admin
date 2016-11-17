@@ -1,23 +1,26 @@
 .main-wrapper {
 	display: table;
-	width: 100%
+	width: 100%;
 }
 .main-row {
 	display: table-row;
 }
 .sidebar {
-
+	
 	@include media-breakpoint-up(md) {
+	    bottom: 0;
 		display: table-cell;
+		position: fixed;
 		vertical-align: top;
-		width: 300px;
+		width: $sidebar-width;
+	    top: 0;
 	}
 }
 
 .main-content {
 	background: $main-content-bg;
 	box-shadow: inset 1px 0 5px rgba(0, 0, 0, 0.3);
-	padding: 0 $grid-gutter-width / 2 $grid-gutter-width / 2; 
+	padding: 0 $grid-gutter-width / 2 $grid-gutter-width / 2;
 
 	@include media-breakpoint-up(md) {
 		display: table-cell;
@@ -26,4 +29,5 @@
 }
 
 .main-display {
+	margin-left: $sidebar-width;
 }

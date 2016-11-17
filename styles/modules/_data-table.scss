@@ -28,16 +28,22 @@ $card-profile-padding-left: 52px;
 	@include media-breakpoint-up(md) {
 		display: table-row;
 	}
+
+	&:nth-child(even) {
+		background: #fff;
+	}
 }
 
 .data-table-cell {
+	font-size: 14px;
+
 	@include media-breakpoint-up(xs) {
 		max-width: 400px;
 	}
 	@include media-breakpoint-up(md) {
 		border-top: 1px solid $box-border-color;
 		display: table-cell;
-		padding: $table-cell-padding / 2 $table-cell-padding;
+		padding: $table-cell-padding;
 		vertical-align: middle;
 
 		&:first-child {

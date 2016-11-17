@@ -1,11 +1,16 @@
 .main-header { // can't name it just 'header' because sass doesn't like it
-	border-bottom: 1px solid #ccc;
+	background: $sidebar-bg;
 	padding: $grid-gutter-width / 2;
 	margin: 0 (-$grid-gutter-width / 2) $grid-gutter-width / 2;
 }
 
 .header-title {
-	font-size: 25px;
+	color: #fff;
+	font-size: 23px;
 	// font-weight: 300;
 	margin: 0;
+}
+
+.header-icon {
+	margin-right: $grid-gutter-width / 2;
 }

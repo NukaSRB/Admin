@@ -2,14 +2,15 @@
 	background: $box-bg;
     border: 1px solid $box-border-color;
     box-shadow: $box-shadow;
+    font-size: 14px;
 	min-width: 200px;
 	padding: $grid-gutter-width / 2;
 }
 
 .box-header {
-	background: $sidebar-bg;
+	background: #fff;
 	border-bottom: 1px solid $box-border-color;
-	color: #fff;
+	color: $body-color;
 	height: 50px;
 	margin: -$grid-gutter-width / 2;
 	margin-bottom: $grid-gutter-width / 2;
@@ -22,7 +23,6 @@
 .box-title {
 	display: block;
 	font-size: 20px;
-	font-weight: 300;
 	margin-bottom: 0;
 	overflow: hidden;
 	white-space: nowrap;

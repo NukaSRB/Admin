@@ -15,8 +15,15 @@ layout: base
 					 <!-- include sample-alert.html  -->
 
 					<header id="header" class="main-header">
-						<h1 class="header-title">{{ page.title }}</h1>
+						<h1 class="header-title">
+							<span class="header-icon {{ page.icon }}"></span>
+							{{ page.title }}
+						</h1>
 					</header>
+
+					<div class="sub-header">
+						Breadcrumb goes here...
+					</div>
 
 			    	{{ content }}
 		    	</div>
