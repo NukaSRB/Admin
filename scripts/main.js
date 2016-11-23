@@ -14,22 +14,16 @@ document.body.className += ' js';
 window.$ = window.jQuery = require('jquery');
 
 // Google Webfont Loader (optional)
-require('./_modules/_webfont');
+require('./modules/_webfont');
 
-// Twitter Bootstrap Optimized Build
-require('./_modules/_bootstrap');
+// Requiring Vue
+require('./modules/sidebar');
+// require('./components/Alert');
 
-// IE/Mobile Platform Detection
-require('./_modules/_ie10');
-// require('./_modules/_mobile'); // (optional)
-
-// Load Javascript Custom Forms (optional)
-// Please don't use this module...
-// require('./_modules/_jcf');
-
-// Load Your Custom Modules
-require('./_modules/_example');
-
-// Load Google Analytics
-// You might want to move this higher for more priority
-require('./_modules/_ganalytics');
+// global.app = new Vue({
+// 	el: '#main',
+// 	delimiters: ['<%', '%>'],
+// 	data: {
+// 		type: 'success'
+// 	}
+// });

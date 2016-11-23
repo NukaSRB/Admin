@@ -1,6 +1,50 @@
 .sidebar {
 	background: $sidebar-bg;
 	box-shadow: $box-shadow;
+	transition: $sidebar-transition;
+}
+
+.sidebar-compact-btn {
+	background: $sidebar-bg;
+	border: none;
+	border-radius: 50%;
+	box-shadow: $box-shadow;
+    color: #fff;
+    height: 26px;
+    left: 8px;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    transition:
+    	border-radius $sidebar-transition .1s,
+    	left $sidebar-transition .1s,
+    	opacity $sidebar-transition,
+    	top $sidebar-transition .1s,
+    	width $sidebar-transition .1s;
+    top: 8px;
+    width: 26px;
+
+    &:focus, &:active {
+    	outline: none;
+    }
+
+	&:before {
+		@include icon-font($fa-var-angle-double-left);
+		position: relative;
+		left: -1px;
+		top: -1px;
+		transition: transform $sidebar-transition;
+		transform: rotate(0);
+	}
+
+	.sidebar:hover & {
+		opacity: .6;
+
+	    &:hover {
+	    	opacity: 1;
+	    }
+	}
 }
 
 .side-nav {
@@ -11,10 +55,10 @@
 		padding: $grid-gutter-width / 2;
 		padding-left: $grid-gutter-width * 1.75;
 		position: relative;
-		transition: .3s;
+		transition: $sidebar-transition;
 
 		&:hover {
-			background: darken($sidebar-bg, 7%);
+			background: $sidebar-bg-darker;
 
 			&:after {
 				color: lighten($sidebar-bg, 10%)

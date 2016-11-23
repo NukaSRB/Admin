@@ -6,7 +6,6 @@
 	display: table-row;
 }
 .sidebar {
-	
 	@include media-breakpoint-up(md) {
 	    bottom: 0;
 		display: table-cell;
@@ -30,4 +29,5 @@
 
 .main-display {
 	margin-left: $sidebar-width;
+	transition: margin-left $sidebar-transition;
 }

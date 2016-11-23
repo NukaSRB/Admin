@@ -1,0 +1,49 @@
+.main-display.maximized {
+	margin-left: $sidebar-minimized-width;
+}
+.sidebar.minimized {
+	width: $sidebar-minimized-width;
+
+	.sidebar-compact-btn {
+		border-radius: 0;
+		left: 0;
+		padding-top: 4px;
+		opacity: 1;
+		top: 0;
+		transition: width $sidebar-transition 0;
+		width: 100%;
+
+		&:hover {
+			background: $sidebar-bg-darker;
+		}
+
+		&:before {
+			transform: rotate(-180deg);
+		}
+	}
+
+	.brand {
+		height: 0;
+		padding: 0;
+	}
+
+	.side-nav {
+		margin-top: 26px;
+	}
+
+	.nav-link {
+		padding-left: $grid-gutter-width / 2;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.nav-link-icon {
+		position: static;
+	}
+
+	.nav-link-text {
+		display: none;
+	}
+}

@@ -17,9 +17,12 @@ $swatch-6: $gray-light;
 
 $brand-bg: #00d48e;
 $sidebar-width: 280px;
+$sidebar-minimized-width: 52px;
 $sidebar-bg: #323543;
+$sidebar-bg-darker: darken($sidebar-bg, 7%);
 $sidebar-link-border: darken($sidebar-bg, 4%);
 $main-content-bg: #f7f7f7;
+$sidebar-transition: .4s ease-in;
 
 // alerts
 $alert-border-width: 0;
@@ -30,5 +33,5 @@ $alert-danger-text: #fff;
 // boxes
 $box-bg: #fff;
 $box-border-color: #d2d2d2;
-$box-shadow-color: rgba(0,0,0,.1);
+$box-shadow-color: rgba(0,0,0,.13);
 $box-shadow: 0 0 5px $box-shadow-color;

@@ -3,6 +3,7 @@
     border: 1px solid $box-border-color;
     box-shadow: $box-shadow;
     font-size: 14px;
+    margin-bottom: $grid-gutter-width;
 	min-width: 200px;
 	padding: $grid-gutter-width / 2;
 }

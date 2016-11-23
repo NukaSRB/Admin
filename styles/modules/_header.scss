@@ -1,5 +1,5 @@
 .main-header { // can't name it just 'header' because sass doesn't like it
-	background: $sidebar-bg;
+	background: lighten($sidebar-bg, 15%);
 	padding: $grid-gutter-width / 2;
 	margin: 0 (-$grid-gutter-width / 2) $grid-gutter-width / 2;
 }

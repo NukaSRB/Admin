@@ -1,4 +1,8 @@
-<aside id="sidebar" class="sidebar">
+<aside id="sidebar"
+	   class="sidebar"
+	   :class="{ minimized: sidebarIsMinimized }"
+>
+	<button @click="toggleSidebarSize" class="sidebar-compact-btn"></button>
 	<div class="brand">
 		<a href="{{ site.links.dashboard }}">
 			<img class="brand-logo" src="/assets/img/esensi-logo.png" alt="Company logo">
