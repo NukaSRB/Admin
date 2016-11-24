@@ -1,37 +1,37 @@
 {
     "scripts": {
-        "source": "./scripts/*.js",
-        "watch": "./scripts/**/*.js",
-        "dest": "assets/js/",
+        "source": "./resources/scripts/*.js",
+        "watch": "./resources/scripts/**/*.js",
+        "dest": "./public/js/",
         "lint": [
             "./gulpfile.js",
             "./.jshintrc",
             "./composer.json",
             "./package.json",
-            "./scripts/**/*.js",
-            "!./scripts/common/_ga.js"
+            "./resources/scripts/**/*.js",
+            "!./resources/scripts/common/_ga.js"
         ]
     },
     "styles": {
-        "source": "./styles/*.scss",
-        "watch": "./styles/**/*.scss",
-        "dest": "assets/css/",
+        "source": "./resources/styles/*.scss",
+        "watch": "./resources/styles/**/*.scss",
+        "dest": "./public/css/",
         "compiler": "sass"
     },
     "fonts": {
         "source": [
-            "./fonts/**/*",
+            "./resources/fonts/**/*",
             "./node_modules/font-awesome/fonts/**/*",
             "./node_modules/bootstrap/dist/fonts/**/*",
             "./node_modules/open-sans/fonts/**/*"
         ],
-        "watch": "./fonts/**/*",
-        "dest": "assets/fonts/"
+        "watch": "./resources/fonts/**/*",
+        "dest": "./public/fonts/"
     },
     "images": {
-        "source": "./images/**/*",
-        "watch": "./images/**/*",
-        "dest": "assets/img/"
+        "source": "./resources/images/**/*",
+        "watch": "./resources/images/**/*",
+        "dest": "./public/img/"
     },
     "deployment": {
         "source": ["./*"],
@@ -50,7 +50,7 @@
         }
     },
     "workbench": {
-        "watch": ["assets/**/*"],
+        "watch": ["./public/**/*"],
         "init": ["watch"]
     },
     "autoprefixerOpts": {
@@ -74,6 +74,5 @@
         ]
     },
     "vendor": "./node_modules/",
-    "sourcemaps": true,
     "revisions": false
 }

@@ -1,9 +1,8 @@
-.DS_Store
-.env
-npm-debug.log
-
-/assets
 /node_modules
-/public
-/public_html
+/public/storage
+/storage/*.key
 /vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env
